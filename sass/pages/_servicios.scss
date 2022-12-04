@@ -1,0 +1,8 @@
+@mixin sizes($width, $height) {
+    max-height: $height;
+    max-width: $width;
+}
+
+.img-srv{
+    @include sizes(300px, 300px);
+    }

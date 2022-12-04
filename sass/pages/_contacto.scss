@@ -1,0 +1,19 @@
+@mixin sizes($width, $height) {
+    max-height: $height;
+    max-width: $width;
+}
+
+.section-form{
+    padding-left: 1rem;
+}
+
+.checkbox{
+    width: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-checkbox{
+    @include sizes(1.5rem, 1.5rem);
+}

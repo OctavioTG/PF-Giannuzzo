@@ -1,0 +1,29 @@
+/*  DESKTOP */
+@mixin sizes($width, $height) {
+    max-height: $height;
+    max-width: $width;
+}
+
+@media screen and (min-width: 992px){
+    .main-Imgs{
+        @include sizes(10rem, 10rem);
+
+    }
+    
+    .hs-Main{
+        display: none;
+    }
+
+    .section-form-div{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .form-control{
+        width: 70%;
+    }
+    
+    .nav-item{
+        font-size: 1.5rem;
+    }
+}

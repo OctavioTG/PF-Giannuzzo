@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* MOBILE FIRST */
+@mixin sizes($width, $height) {
+    max-height: $height;
+    max-width: $width;
+}
+
+.row{
+    margin: 0;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F2F4EF;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+p{
+    margin: 0;
+}
+
+.header-color{
+    background-color: #748CAA;
+}
+
+.logo{
+@include sizes(3rem, 3rem);
+}
+
+.offcanvas{
+    background-color: #F2F4EF;
+}
+
+.btn-close{
+    @include sizes(3rem, 3rem);
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #F2F4EF;
+}
+
+.nav-item{
+    font-size: 3rem;
+}
+
+.footer-section{
+    background-color: #A5B2AF;
+    padding: 1rem 0rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img{
+    @include sizes(3rem, 3rem);
+    margin: 0 1rem;
+}
+
+.foot-Logo{
+    @include sizes(5rem, 5rem);
+}
